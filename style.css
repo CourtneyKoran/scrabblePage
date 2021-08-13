@@ -1,0 +1,100 @@
+/*
+File: style.css
+GUI Assignment: HW5. Implmenting a portion of Scrabble using HTML, CSS, JavaScript, JQuery, and Bootsrap.
+Courtney Koran, UMass Lowell Computer Science, Courtney_Koran@student.uml.edu
+Copyright (c) 2021 by Courtney. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by CK on August 13, 2021.
+This CSS code stles my scrabble page including adding the rack and board images.
+*/
+
+
+/*Styling the draggable container that holds the Scrabble rack and the draggable tiles. */
+#draggable{
+    background-image: url("graphics_data/scrabble-tile-holder-406774_640.png");
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width:670px;
+    height:150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*Styliing the droppable container that includes the Scrabble board.*/
+#droppable{
+    background-image: url("graphics_data/Scrabble_Board_OneLine.png");
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height:80px;
+    background-repeat: no-repeat;
+}
+
+/*Styling the Scrabble pieces*/
+img{
+    margin-left: auto;
+    margin-right: auto;
+    width:60px;
+    height:60px;
+    margin-top: 50px;
+    padding-left:7px; 
+}
+
+/*Styling the individual droppables*/
+.drop{
+    width:66px;
+    height:70px;
+    padding:0px;
+}
+
+/*Styling the droppable containers*/
+.col-xs-1{
+    padding-left:0px;
+    padding-right:0px;
+    width:66px;
+    height:70px;
+}
+
+/*Styling the display remaining tiles and score information*/
+#center >p{
+    display:inline;
+    float:left;
+}
+
+/*Styling the display buttons*/
+ #StartOver, #NextWord{
+   margin-left:40px;
+    margin-right:40px;
+}
+
+/*Styling the display remaining tiles and score information*/
+#pRemain, #pScore{
+    margin-left:40px;
+    margin-right:10px;
+    font-weight: bold;
+}
+
+/*Styling the display container. Code borrowed from W3Schools*/
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/*Styling the actual score and remaining tiles info*/
+#roundScore, #remaining{
+    text-align: left;
+  
+  }
+
+/*Styling the body of the webpage*/
+body{
+    background-color: rgb(121, 199, 121);
+}
+
+/*Styling message when tiles run out*/
+#message{
+    text-align: center;
+}
